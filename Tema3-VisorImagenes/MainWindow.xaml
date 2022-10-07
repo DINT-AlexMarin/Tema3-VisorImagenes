@@ -1,0 +1,44 @@
+﻿<Window x:Class="Tema3_VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema3_VisorImagenes"
+        mc:Ignorable="d"
+        Title="Visor de Imágenes" Height="470" Width="800" Icon="assets/index_img.ico" MinHeight="500" MinWidth="500">
+
+    <DockPanel LastChildFill="True" Margin="5">
+        <DockPanel Margin="5" Height="50" Background="AliceBlue" DockPanel.Dock="Bottom" LastChildFill="False">
+            <TextBlock Margin="5" DockPanel.Dock="Left" VerticalAlignment="Center" FontSize="20" FontFamily="Rubik" Background="AliceBlue">Nº Imágenes: 10</TextBlock>
+            <TextBlock Margin="5" DockPanel.Dock="Right" VerticalAlignment="Center" FontSize="20" FontFamily="Rubik" Background="AliceBlue">Diseñado por Alex Marín</TextBlock>
+        </DockPanel>
+
+        <Border DockPanel.Dock="Right" BorderBrush="Black" BorderThickness="3" CornerRadius="3">
+            <DockPanel LastChildFill="False" Background="#FF6AE46A">
+                <StackPanel DockPanel.Dock="Top">
+                    <Button Margin="5" Content="Añadir imagen"></Button>
+                    <Button Margin="5" Content="Eliminar Imagen"></Button>
+                    <Button Margin="5" Content="Eliminar Todas"></Button>
+                </StackPanel>
+                <StackPanel DockPanel.Dock="Bottom">
+                    <Button Margin="5" Content="Rotar"></Button>
+                    <Button Margin="5" Content="Recortar"></Button>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+
+        <TextBlock Height="50" DockPanel.Dock="Top" FontSize="40" FontFamily="Rubik" TextAlignment="Center">Visor de imágenes</TextBlock>
+        <WrapPanel>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+            <Image Width="100" Source="assets/episodioIV.jpg" Margin="5"></Image>
+        </WrapPanel>
+    </DockPanel>
+</Window>
